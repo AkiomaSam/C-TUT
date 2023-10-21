@@ -1,3 +1,4 @@
+// This program is used to add two matrices
 #include <stdio.h>
 int main()
 {
