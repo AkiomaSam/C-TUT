@@ -7,7 +7,7 @@ int main()
     // y is year
     // l = 1 is leap year   = 0 if not
     // v = 1 if date is valid  = 0 if invalid
-    int d , m , y , l , v , D , M , Y;
+    int d , m , y , l , v;
     // Input of date
     printf("Enter date\n");
     scanf("%d", &d);
@@ -15,8 +15,7 @@ int main()
     scanf("%d", &m);
     printf("Enter year\n");
     scanf("%d", &y);
-    M = m;
-    Y = y;
+    int D , M = m , Y = y;
     // Checking Leap Year
     if ( y % 400 == 0 || ( y % 4 == 0 && y % 100 != 0 ) ) l = 1;
     else l = 0;
